@@ -1,6 +1,6 @@
 
 exports.min = function min (array) {
-  if (array == undefined || array.length < 1) {
+  if (!array || array.length < 1) {
     return 0;
   } else {
     return Math.min(...array);
